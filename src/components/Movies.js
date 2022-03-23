@@ -26,11 +26,10 @@ const Movies = () => {
                 <hr/>
                 <div className='movieContainer'>
                     <div className='movieSlab'>
-
-            </div>
-                {movies.map((movie, index)=>{
-                    return <Movie key={index} image={movie.show.image.medium} name={movie.show.name}></Movie>
-                })}
+                        {movies.map((movie, index)=>{
+                            return <Movie key={index} image={movie.show.image.medium} name={movie.show.name}></Movie>
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
